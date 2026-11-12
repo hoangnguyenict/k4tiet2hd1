@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoạt động 1 – AI tác động đến điều gì?</title>
+<style>
+:root{--blue:#168bd2;--navy:#173b5e;--sky:#eaf6fd;--line:#d9e6ef;--green:#16834a;--greenbg:#eaf7ef;--muted:#62788c}
+*{box-sizing:border-box}
+body{margin:0;background:#f2f6fa;color:#19354e;font-family:Arial,Helvetica,sans-serif}
+.page{max-width:1120px;margin:24px auto;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 12px 32px rgba(31,69,102,.09)}
+header{text-align:center;padding:27px 24px 15px;background:linear-gradient(180deg,#f7fcff,#fff)}
+.kicker{font-size:13px;letter-spacing:1.2px;font-weight:800;color:#4d8fb9;text-transform:uppercase}
+h1{font-size:32px;color:var(--blue);margin:9px 0 7px;font-weight:800}
+.credit{font-size:13px;color:#73879a;font-style:italic}
+.intro{max-width:850px;margin:0 auto 18px;text-align:center;font-size:17px;line-height:1.5;color:#39546c}
+.content{padding:10px 24px 30px}
+.legend{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:4px 0 22px}
+.pill{padding:9px 15px;border:1px solid #cfe3f1;border-radius:999px;background:#f5fbff;font-weight:700;color:#285777;font-size:14px}
+.questions{display:grid;grid-template-columns:1fr;gap:18px}
+.qcard{border:1px solid var(--line);border-radius:18px;padding:19px;background:#fff}
+.qtop{display:flex;align-items:center;gap:12px;margin-bottom:13px}
+.num{width:38px;height:38px;border-radius:12px;background:#e6f4fc;color:#087dbd;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;flex-shrink:0}
+.qtitle{font-size:18px;font-weight:800;color:var(--navy)}
+.scenario{font-size:18px;line-height:1.55;margin:0 0 16px;color:#263e53}
+.ask{font-weight:800;font-size:16px;margin:0 0 12px;color:#23445f}
+.options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.option{border:1.5px solid #cbdce9;background:#f8fbfd;border-radius:13px;padding:13px 12px;text-align:left;font-size:15px;line-height:1.4;color:#25445f;font-weight:700;cursor:pointer;min-height:76px}
+.option:hover{border-color:#62a9d5;background:#f0f9ff}
+.option.selected{border:2px solid var(--blue);background:#eaf6fd}
+.option.correct{border:2px solid var(--green);background:var(--greenbg);color:#116638}
+.option .letter{display:inline-flex;width:25px;height:25px;align-items:center;justify-content:center;border-radius:8px;background:#e2edf5;margin-right:7px;color:#315b78;font-weight:900}
+.option.correct .letter{background:#ccebd7;color:#116638}
+.feedback{display:none;margin-top:13px;border-radius:12px;padding:12px 14px;background:var(--greenbg);color:#17643a;font-size:15px;line-height:1.5}
+.feedback.show{display:block}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px 0 8px}
+button.main{background:#147fc0;color:#fff;border:0;border-radius:13px;padding:13px 22px;font-size:16px;font-weight:800;cursor:pointer}
+button.secondary{background:#edf4f8;color:#31536e;border:1px solid #d0e0eb;border-radius:13px;padding:13px 20px;font-size:15px;font-weight:800;cursor:pointer}
+.end-question small{display:block;font-size:14px;font-weight:500;margin-top:7px;color:#816b3e}
+@media(max-width:760px){.page{margin:0;border-radius:0}.content{padding:8px 14px 24px}h1{font-size:25px}.options{grid-template-columns:1fr}.option{min-height:0}.scenario{font-size:16px}}
+@media print{body{background:white}.page{box-shadow:none;margin:0;border:0}.actions{display:none}}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <div class="kicker">Tiết 2 · Hoạt động 1 · Khởi động</div>
+  <h1>AI TÁC ĐỘNG ĐẾN ĐIỀU GÌ?</h1>
+  <div class="credit">Thiết kế: Hoangntm2 - VSC Tih Times City</div>
+</header>
+<div class="content">
+  <p class="intro">Quan sát từng tình huống và chọn khái niệm phù hợp nhất. Hãy cùng cả lớp ôn lại kiến thức đã học ở tiết trước!</p>
+  <div class="legend">
+    <span class="pill">A · Tính toàn diện</span>
+    <span class="pill">B · Toàn cầu hóa</span>
+    <span class="pill">C · Phát triển bền vững</span>
+  </div>
+  <section class="questions">
+    <article class="qcard" data-answer="A">
+      <div class="qtop"><div class="num">1</div><div class="qtitle">Tình huống 1</div></div>
+      <p class="scenario">AI giúp người dân ở vùng núi nghe dự báo thời tiết bằng ngôn ngữ quen thuộc của họ.</p>
+      <p class="ask">Tình huống này liên quan nhất đến khái niệm nào?</p>
+      <div class="options">
+        <button class="option" data-choice="A"><span class="letter">A</span>Tính toàn diện</button>
+        <button class="option" data-choice="B"><span class="letter">B</span>Toàn cầu hóa</button>
+        <button class="option" data-choice="C"><span class="letter">C</span>Phát triển bền vững</button>
+      </div>
+      <div class="feedback"><strong>Đáp án: A – Tính toàn diện.</strong> AI giúp những người có nhu cầu ngôn ngữ khác nhau tiếp cận thông tin.</div>
+    </article>
+    <article class="qcard" data-answer="B">
+      <div class="qtop"><div class="num">2</div><div class="qtitle">Tình huống 2</div></div>
+      <p class="scenario">AI hỗ trợ các nhà khoa học Việt Nam và nước ngoài chia sẻ kết quả nghiên cứu.</p>
+      <p class="ask">Tình huống này liên quan nhất đến khái niệm nào?</p>
+      <div class="options">
+        <button class="option" data-choice="A"><span class="letter">A</span>Tính toàn diện</button>
+        <button class="option" data-choice="B"><span class="letter">B</span>Toàn cầu hóa</button>
+        <button class="option" data-choice="C"><span class="letter">C</span>Phát triển bền vững</button>
+      </div>
+      <div class="feedback"><strong>Đáp án: B – Toàn cầu hóa.</strong> AI hỗ trợ chia sẻ kiến thức và hợp tác giữa các quốc gia.</div>
+    </article>
+    <article class="qcard" data-answer="C">
+      <div class="qtop"><div class="num">3</div><div class="qtitle">Tình huống 3</div></div>
+      <p class="scenario">AI điều chỉnh lượng nước tưới cho cây trong công viên để tránh lãng phí.</p>
+      <p class="ask">Tình huống này liên quan nhất đến khái niệm nào?</p>
+      <div class="options">
+        <button class="option" data-choice="A"><span class="letter">A</span>Tính toàn diện</button>
+        <button class="option" data-choice="B"><span class="letter">B</span>Toàn cầu hóa</button>
+        <button class="option" data-choice="C"><span class="letter">C</span>Phát triển bền vững</button>
+      </div>
+      <div class="feedback"><strong>Đáp án: C – Phát triển bền vững.</strong> AI góp phần sử dụng nước hợp lý và hạn chế lãng phí tài nguyên.</div>
+    </article>
+  </section>
+  <div class="actions">
+    <button class="main" id="check">Kiểm tra hoàn thành</button>
+  </div>
+  <div id="result" role="status" aria-live="polite" style="text-align:center;font-weight:800;margin:8px 0 0;color:#31536e;min-height:22px"></div>
+</div>
+</div>
+<script>
+document.querySelectorAll('.option').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const card=btn.closest('.qcard');
+    card.querySelectorAll('.option').forEach(x=>{
+      x.classList.remove('selected','correct','incorrect');
+    });
+    card.querySelector('.feedback').classList.remove('show');
+    btn.classList.add('selected');
+    document.getElementById('result').textContent='';
+  });
+});
+document.getElementById('check').addEventListener('click',()=>{
+  const cards=[...document.querySelectorAll('.qcard')];
+  const result=document.getElementById('result');
+  const unanswered=cards.filter(card=>!card.querySelector('.option.selected'));
+  if(unanswered.length){
+    result.style.color='#a45b13';
+    result.textContent='Con hãy chọn đáp án cho cả 3 tình huống trước khi kiểm tra nhé!';
+    unanswered.forEach(card=>{
+      card.style.borderColor='#e4a64b';
+      setTimeout(()=>card.style.borderColor='',1200);
+    });
+    return;
+  }
+  let score=0;
+  cards.forEach(card=>{
+    const selected=card.querySelector('.option.selected');
+    const correct=selected.dataset.choice===card.dataset.answer;
+    card.querySelectorAll('.option').forEach(btn=>{
+      btn.classList.remove('correct','incorrect');
+    });
+    if(correct){
+      score++;
+      selected.classList.add('correct');
+    }else{
+      selected.classList.add('incorrect');
+      card.querySelector('[data-choice="'+card.dataset.answer+'"]').classList.add('correct');
+    }
+    card.querySelector('.feedback').classList.add('show');
+  });
+  result.style.color=score===3?'#16834a':'#31536e';
+  result.textContent=score===3
+    ?'Hoàn thành xuất sắc! Con đã trả lời đúng cả 3 tình huống.'
+    :'Con trả lời đúng '+score+'/3 tình huống. Hãy quan sát phản hồi và cùng giáo viên củng cố nhé!';
+});
+</script>
+</body>
+</html>
